@@ -9,14 +9,14 @@ body {
     color: #1a1a1a;
     background: #fefefe;
     line-height: 1.6;
-    padding: 3rem 1.5rem;
+    padding: 48px 24px;
     max-width: 640px;
     margin: 0 auto;
 }
 
 .header {
     text-align: center;
-    margin-bottom: 3rem;
+    margin-bottom: 48px;
 }
 
 .header a {
@@ -31,18 +31,18 @@ body {
     display: block;
     width: 90px;
     height: auto;
-    margin: 0 auto 0.25rem;
+    margin: 0 auto 4px;
 }
 
 h1 {
-    font-size: 1.75rem;
+    font-size: 30px;
     font-weight: normal;
     letter-spacing: 0.08em;
-    margin-bottom: 0.25rem;
+    margin-bottom: 4px;
 }
 
 .subtitle {
-    font-size: 0.95rem;
+    font-size: 17px;
     color: inherit;
     margin-bottom: 0;
 }
@@ -50,13 +50,13 @@ h1 {
 hr {
     border: none;
     border-top: 1px solid #ccc;
-    margin: 2rem 0;
+    margin: 32px 0;
 }
 
 h2 {
-    font-size: 1.05rem;
+    font-size: 19px;
     font-weight: normal;
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
     color: #333;
 }
 
@@ -67,7 +67,7 @@ ul {
 }
 
 li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
 }
 
 a {
@@ -80,13 +80,13 @@ a:hover {
 }
 
 .section {
-    margin-bottom: 2.5rem;
+    margin-bottom: 40px;
 }
 
 .performance {
-    font-size: 0.9rem;
+    font-size: 18px;
     color: #444;
-    margin-bottom: 2.5rem;
+    margin-bottom: 40px;
     line-height: 1.7;
 }
 
@@ -96,7 +96,7 @@ a:hover {
 }
 
 .contact {
-    font-size: 0.9rem;
+    font-size: 16px;
     color: #555;
 }
 
@@ -105,28 +105,28 @@ a:hover {
 }
 
 p {
-    margin-bottom: 1rem;
+    margin-bottom: 16px;
 }
 
 ol {
-    margin-bottom: 1rem;
-    padding-left: 1.5rem;
+    margin-bottom: 16px;
+    padding-left: 24px;
 }
 
 ol li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 8px;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 0.85rem;
-    margin-bottom: 1.5rem;
+    font-size: 16px;
+    margin-bottom: 24px;
 }
 
 th, td {
     text-align: left;
-    padding: 0.4rem 0.6rem;
+    padding: 6px 10px;
     border-bottom: 1px solid #e0e0e0;
 }
 
@@ -137,7 +137,7 @@ th {
 }
 
 footer {
-    margin-top: 3rem;
-    font-size: 0.8rem;
+    margin-top: 48px;
+    font-size: 15px;
     color: #999;
 }
