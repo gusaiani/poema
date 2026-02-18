@@ -12,6 +12,7 @@ body {
     padding: 48px 24px;
     max-width: 640px;
     margin: 0 auto;
+    position: relative;
 }
 
 .header {
@@ -140,6 +141,32 @@ footer {
     margin-top: 48px;
     font-size: 15px;
     color: #999;
+}
+
+/* Home icon navigation */
+.home-link {
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    color: #1a4a8a;
+    line-height: 1;
+    transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.home-link:hover {
+    color: #1a4a8a;
+    text-decoration: none;
+    transform: translateY(-2px);
+}
+
+.home-link:active {
+    color: #0d2e5a;
+    transform: translateY(0) scale(0.92);
+    transition-duration: 0.05s;
+}
+
+.home-link svg {
+    display: block;
 }
 
 /* Home page two-column layout */
