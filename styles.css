@@ -86,7 +86,7 @@ a:hover {
 .performance {
     font-size: 18px;
     color: #444;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     line-height: 1.7;
 }
 
@@ -140,4 +140,77 @@ footer {
     margin-top: 48px;
     font-size: 15px;
     color: #999;
+}
+
+/* Home page two-column layout */
+body.home {
+    max-width: 960px;
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 48px;
+    align-items: start;
+}
+
+.intro-body {
+    position: relative;
+}
+
+.intro-fade {
+    display: none;
+}
+
+.read-more-btn {
+    display: none;
+}
+
+@media (max-width: 680px) {
+    body.home {
+        max-width: 640px;
+    }
+
+    .two-col {
+        display: block;
+    }
+
+    .col-links {
+        margin-top: 40px;
+    }
+
+    .intro-body:not(.expanded) {
+        max-height: 260px;
+        overflow: hidden;
+    }
+
+    .intro-fade {
+        display: block;
+        height: 80px;
+        margin-top: -80px;
+        background: linear-gradient(transparent, #fefefe);
+        pointer-events: none;
+        position: relative;
+        z-index: 1;
+    }
+
+    .intro-fade.hidden {
+        display: none;
+    }
+
+    .read-more-btn {
+        display: inline-block;
+        background: none;
+        border: none;
+        color: #1a4a8a;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 4px 0;
+        margin-top: 4px;
+    }
+
+    .read-more-btn:hover {
+        text-decoration: underline;
+    }
 }
