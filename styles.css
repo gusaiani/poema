@@ -152,9 +152,15 @@ th, td {
     border-bottom: 1px solid var(--border);
 }
 
-th:nth-child(2), th:nth-child(3),
-td:nth-child(2), td:nth-child(3) {
+th:nth-child(2), th:nth-child(3), th:nth-child(4), th:nth-child(5),
+td:nth-child(2), td:nth-child(3), td:nth-child(4), td:nth-child(5) {
     text-align: right;
+}
+
+/* Portfolio tables (5 cols): keep Ação column left-aligned */
+table:has(th:nth-child(5)) th:nth-child(2),
+table:has(th:nth-child(5)) td:nth-child(2) {
+    text-align: left;
 }
 
 th {
