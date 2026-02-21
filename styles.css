@@ -209,6 +209,7 @@ footer {
 /* CTA button */
 a.cta {
     display: inline-block;
+    margin-top: 24px;
     font-family: 'DM Mono', monospace;
     font-size: 11px;
     letter-spacing: 0.14em;
