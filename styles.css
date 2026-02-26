@@ -16,11 +16,12 @@
 
 body {
     font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 17px;
     color: var(--ink);
     background: var(--bg);
     line-height: 1.6;
     padding: 12px 24px;
-    max-width: 640px;
+    max-width: 680px;
     margin: 0 auto;
     position: relative;
 }
@@ -28,7 +29,7 @@ body {
 .header {
     text-align: center;
     margin-bottom: 18px;
-    padding: 20px 0;
+    padding: 20px 0 0;
 }
 
 .header a {
@@ -56,11 +57,20 @@ h1 {
 
 .subtitle {
     font-family: 'DM Mono', monospace;
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 0.16em;
     text-transform: uppercase;
     color: var(--muted);
     margin-bottom: 0;
+}
+
+.header-address {
+    font-family: 'DM Mono', monospace;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0.06em;
+    color: var(--muted);
+    margin-top: 8px;
 }
 
 hr {
@@ -126,6 +136,7 @@ a:hover {
 }
 
 p {
+    font-size: 18px;
     margin-bottom: 16px;
 }
 
