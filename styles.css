@@ -21,7 +21,7 @@ body {
     background: var(--bg);
     line-height: 1.6;
     padding: 12px 24px;
-    max-width: 680px;
+    max-width: 880px;
     margin: 0 auto;
     position: relative;
 }
