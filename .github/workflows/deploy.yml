@@ -1,0 +1,22 @@
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Deploy via rsync
+        uses: burnett01/rsync-deployments@7.0.1
+        with:
+          switches: -av --delete
+          path: ./
+          remote_path: /var/www/poe.ma/public_html/
+          remote_host: poe.ma
+          remote_user: root
+          remote_key: ${{ secrets.DEPLOY_SSH_KEY }}
