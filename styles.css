@@ -333,13 +333,21 @@ body.home {
     align-items: start;
 }
 
+.col-links li {
+    margin-bottom: 4px;
+}
+
+.col-links .section {
+    margin-bottom: 20px;
+}
+
 .col-links h2 {
     font-family: 'DM Mono', monospace;
     font-size: 10px;
     letter-spacing: 0.18em;
     text-transform: uppercase;
     color: var(--muted);
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
 .intro-body {
