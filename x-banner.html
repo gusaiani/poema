@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>X banner · Poema</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      overflow: hidden;
+    }
+    .banner {
+      width: 1500px;
+      height: 500px;
+      position: relative;
+      overflow: hidden;
+      background: #ffffff;
+    }
+    .banner img {
+      position: absolute;
+      width: 1560px;
+      left: 50%;
+      top: -85px;
+      transform: translateX(-50%) rotate(-3deg);
+      transform-origin: 50% 335px;
+      image-rendering: -webkit-optimize-contrast;
+    }
+    /* Soft fade to white at the edges so the rotated corners blend in */
+    .banner::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(to right, #ffffff 0%, rgba(255,255,255,0) 6%, rgba(255,255,255,0) 94%, #ffffff 100%),
+        linear-gradient(to bottom, #ffffff 0%, rgba(255,255,255,0) 8%, rgba(255,255,255,0) 92%, #ffffff 100%);
+      pointer-events: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="banner">
+    <img src="/images/x-banner-source.png" alt="">
+  </div>
+</body>
+</html>
