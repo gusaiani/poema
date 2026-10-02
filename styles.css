@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400;500&display=swap');
 
 :root {
     --bg: #ffffff;
@@ -272,6 +272,10 @@ a.cta:hover {
     font-size: 18px;
     color: var(--ink);
     display: block;
+}
+
+.meta-item .val-strong {
+    font-weight: 700;
 }
 
 /* Meta link (4th item in meta bar) */
