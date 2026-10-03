@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Instagram cover: Poema</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Mono:wght@300;400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  /* Instagram video cover: 1080x1920 (9:16). The grid shows a 4:5 crop
+     (1080x1350, y 285 to 1635) and some surfaces show 1:1 (1080x1080,
+     y 420 to 1500). Everything that matters sits inside the 1:1 zone. */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1080px; height: 1920px; overflow: hidden;
+    background: #0b1a33;
+    font-family: 'Inter', -apple-system, sans-serif;
+    color: #e8edf4; position: relative;
+  }
+  body::before {
+    content: ''; position: absolute; inset: 0;
+    background-image:
+      linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+    background-size: 80px 80px; pointer-events: none;
+  }
+  .glow { position: absolute; width: 900px; height: 900px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(26,74,138,0.18) 0%, transparent 70%);
+    top: 100px; left: -300px; pointer-events: none; }
+  .glow-2 { position: absolute; width: 600px; height: 600px; border-radius: 50%;
+    background: radial-gradient(circle, rgba(26,74,138,0.10) 0%, transparent 70%);
+    bottom: 200px; right: -150px; pointer-events: none; }
+
+  .content {
+    position: absolute; top: 420px; left: 0; width: 1080px; height: 1080px;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: 0;
+  }
+  .logo { width: 210px; height: 210px; margin-bottom: 18px; }
+
+  .section-label {
+    font-family: 'Inter', sans-serif; font-size: 26px; font-weight: 400;
+    color: rgba(232,237,244,0.55); letter-spacing: 4px; text-transform: uppercase;
+    text-align: center; margin-bottom: 14px;
+  }
+  .hero-number {
+    font-family: 'DM Serif Display', Georgia, serif; font-size: 132px; font-weight: 400;
+    line-height: 1; letter-spacing: -2px; color: #ffffff; text-align: center;
+  }
+  .hero-number .pct { font-size: 66px; letter-spacing: 0; opacity: 0.7; margin-left: 2px; }
+  .vs {
+    font-family: 'DM Mono', monospace; font-size: 40px; color: rgba(255,255,255,0.75);
+    text-align: center; margin-top: 14px; letter-spacing: 1px;
+  }
+  .vs span { color: rgba(232,237,244,0.45); font-family: 'Inter', sans-serif; font-size: 28px; letter-spacing: 1px; }
+
+  .divider { width: 80px; height: 2px; background: rgba(26,74,138,0.9); margin: 54px 0 46px; }
+
+  .ytd-number {
+    font-family: 'DM Serif Display', Georgia, serif; font-size: 96px; font-weight: 400;
+    line-height: 1; letter-spacing: -1px; color: #ffffff; text-align: center;
+  }
+  .ytd-number .pct { font-size: 48px; opacity: 0.7; margin-left: 2px; }
+
+  .url {
+    font-family: 'DM Mono', monospace; font-size: 36px; font-weight: 400;
+    color: rgba(255,255,255,0.6); letter-spacing: 3px; margin-top: 56px;
+  }
+</style>
+</head>
+<body>
+  <div class="glow"></div>
+  <div class="glow-2"></div>
+  <div class="content">
+    <img class="logo" src="images/poema-logo-white.svg" alt="Poema">
+
+    <div class="section-label">Retorno acumulado · jan/2017 a set/2026</div>
+    <div class="hero-number">382,73<span class="pct">%</span></div>
+    <div class="vs">× 209,40% <span>Ibovespa</span></div>
+
+    <div class="divider"></div>
+
+    <div class="section-label">Resultados 2026 · até o 3º trimestre</div>
+    <div class="ytd-number">5,95<span class="pct">%</span></div>
+    <div class="vs">× 15,65% <span>Ibovespa</span></div>
+
+    <div class="url">poe.ma</div>
+  </div>
+</body>
+</html>
